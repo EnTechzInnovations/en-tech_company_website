@@ -1,0 +1,558 @@
+/*--------------------------------------------------------------
+# EN-TECHZ INNOVATIONS - Supplementary Responsive CSS
+# PURPOSE: Add missing responsive fixes ONLY
+# Does NOT change existing styles or design - only fills gaps
+# Link this AFTER main.css in your HTML
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Extra Large Screens (1400px+)
+--------------------------------------------------------------*/
+@media (min-width: 1400px) {
+  .hero .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Large Tablets / Small Laptops (max 1199px)
+# (Fills gaps the template missed)
+--------------------------------------------------------------*/
+@media (max-width: 1199px) {
+  /* Hero */
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  /* Why Us feature content */
+  .why-us .feature-content {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .why-us .feature-content h3 {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Tablets (max 992px)
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+
+  /* Hero - center content on tablet */
+  .hero {
+    padding: 90px 0 50px;
+    text-align: center;
+  }
+
+  .hero .hero-content {
+    margin-bottom: 40px;
+  }
+
+  .hero .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero .hero-stats {
+    justify-content: center;
+  }
+
+  .hero .hero-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .hero-visual .hero-image img {
+    max-height: 350px;
+    margin: 0 auto;
+  }
+
+  /* About section image layout fix */
+  .about .image-composition {
+    padding: 1.5rem;
+    margin-top: 20px;
+  }
+
+  /* Services CTA */
+  .services .services-cta {
+    padding: 40px 25px;
+  }
+
+  /* Footer columns */
+  .footer .footer-links {
+    margin-bottom: 25px;
+  }
+
+  /* Contact */
+  .contact .contact-info-area {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mobile (max 768px)
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+  /* ---- Disable AOS delays on mobile ---- */
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+
+  /* ---- Global section spacing ---- */
+  section,
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    padding: 85px 0 45px;
+    min-height: auto;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .hero .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero .hero-visual .hero-image img {
+    max-height: 260px;
+    border-radius: 12px;
+  }
+
+  /* ---- About ---- */
+  .about .content h2 {
+    font-size: 1.6rem;
+  }
+
+  .about .image-composition {
+    padding: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .about .image-composition .image-secondary {
+    width: 50%;
+    bottom: -10px;
+    left: -10px;
+  }
+
+  .about .image-composition .stats-card {
+    top: -10px;
+    right: -10px;
+    padding: 12px 16px;
+    gap: 14px;
+  }
+
+  .about .image-composition .stats-card .stats-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .about .image-composition .stats-card .stats-item p {
+    font-size: 0.72rem;
+  }
+
+  /* ---- Services ---- */
+  .services .service-card {
+    padding: 28px 22px;
+    text-align: center;
+  }
+
+  .services .service-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services .service-badge {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .services .services-cta {
+    padding: 35px 20px;
+  }
+
+  .services .services-cta h3 {
+    font-size: 22px;
+  }
+
+  /* ---- Why Us ---- */
+  .why-us .feature-card {
+    padding: 28px 20px;
+  }
+
+  .why-us .feature-content {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .why-us .feature-content h3 {
+    font-size: 24px;
+  }
+
+  .why-us .feature-content .lead {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .why-us .feature-content .cta-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .why-us .feature-content .cta-wrapper .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ---- Contact ---- */
+  .contact .contact-form-card {
+    padding: 28px 20px;
+  }
+
+  .contact .contact-info-area {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .contact .contact-info-area .info-header h3 {
+    font-size: 22px;
+  }
+
+  .contact .contact-info-area .method-card {
+    padding: 18px;
+  }
+
+  .contact .contact-info-area .method-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .contact .contact-info-area .additional-info .social-connect .social-links {
+    justify-content: center;
+  }
+
+  /* ---- Footer ---- */
+  .footer .footer-top {
+    padding-top: 40px;
+  }
+
+  .footer .footer-about {
+    margin-bottom: 24px;
+  }
+
+  .footer .footer-about .logo span {
+    font-size: 22px;
+  }
+
+  .footer .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .footer h4 {
+    font-size: 15px;
+  }
+
+  .footer .social-links {
+    flex-wrap: wrap;
+  }
+
+  .footer .copyright {
+    padding: 20px 0;
+    font-size: 13px;
+  }
+
+  /* ---- Scroll Top ---- */
+  .scroll-top {
+    width: 38px;
+    height: 38px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .scroll-top i {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Small Mobile (max 576px)
+--------------------------------------------------------------*/
+@media (max-width: 576px) {
+
+  /* Container padding */
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Header */
+  .header .header-container {
+    padding: 8px 12px;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header .btn-getstarted {
+    padding: 6px 14px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 0 40px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero .hero-visual .hero-image img {
+    max-height: 220px;
+  }
+
+  /* Section title */
+  .section-title h2 {
+    font-size: 22px;
+  }
+
+  .section-title p {
+    font-size: 0.9rem;
+  }
+
+  /* About stats card - stack vertically */
+  .about .image-composition .stats-card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .about .image-composition .stats-card .stats-item {
+    text-align: center;
+  }
+
+  /* Services */
+  .services .service-card {
+    padding: 22px 18px;
+  }
+
+  .services .service-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .services .service-icon i {
+    font-size: 28px;
+  }
+
+  .services h4 {
+    font-size: 18px;
+  }
+
+  .services .services-cta {
+    padding: 28px 16px;
+    border-radius: 16px;
+  }
+
+  .services .services-cta h3 {
+    font-size: 20px;
+  }
+
+  /* Why Us */
+  .why-us .feature-card {
+    padding: 24px 16px;
+  }
+
+  .why-us .feature-card .icon-wrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+  }
+
+  .why-us .feature-card h4 {
+    font-size: 18px;
+  }
+
+  .why-us .feature-content .feature-list .feature-item {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Contact */
+  .contact .contact-form-card {
+    padding: 24px 14px;
+    border-radius: 16px;
+  }
+
+  .contact .contact-form-card .form-header h3 {
+    font-size: 20px;
+  }
+
+  .contact .contact-info-area .method-card {
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .contact .contact-info-area .method-card .card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .contact .contact-info-area .method-card .card-icon i {
+    font-size: 16px;
+  }
+
+  .contact .contact-info-area .additional-info .social-connect .social-links .social-link {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Footer */
+  .footer .footer-about p {
+    font-size: 13px;
+  }
+
+  .footer .footer-links ul a {
+    font-size: 13px;
+  }
+
+  /* Bootstrap row gutters fix on tiny screens */
+  .row {
+    --bs-gutter-x: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Extra Small Mobile (max 400px)
+--------------------------------------------------------------*/
+@media (max-width: 400px) {
+
+  .header .btn-getstarted {
+    display: none;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero .hero-visual .hero-image img {
+    max-height: 190px;
+  }
+
+  .about .image-composition .image-secondary {
+    display: none;
+  }
+
+  .services .services-cta .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact .contact-form-card .php-email-form .form-control {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Touch Device Improvements
+--------------------------------------------------------------*/
+@media (hover: none) and (pointer: coarse) {
+  /* Make tap targets bigger on touch devices */
+  .navmenu a {
+    padding: 14px 20px;
+    min-height: 44px;
+  }
+
+  .btn,
+  .btn-getstarted,
+  .submit-btn,
+  .social-link,
+  .footer .social-links a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Disable hover animations on touch */
+  .service-card:hover,
+  .feature-card:hover,
+  .method-card:hover {
+    transform: none;
+  }
+
+  /* Keep tap highlight off for styled elements */
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/*--------------------------------------------------------------
+# Print Styles
+--------------------------------------------------------------*/
+@media print {
+  .header,
+  .footer,
+  .scroll-top,
+  #preloader,
+  .hero-bg-elements,
+  .hero-buttons,
+  #mouse-aura {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 20pt 0;
+  }
+}
